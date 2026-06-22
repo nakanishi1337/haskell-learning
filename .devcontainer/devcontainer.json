@@ -1,0 +1,25 @@
+{
+    "name": "Haskell Learning",
+    "image": "haskell:9.4",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "haskell.haskell",
+                "haskell.language-haskell",
+                "formulahendry.code-runner"
+            ],
+            "settings": {
+                "code-runner.runInTerminal": true,
+                "code-runner.clearPreviousOutput": true,
+                "code-runner.saveFileBeforeRun": true,
+                "code-runner.executorMap": {
+                    "haskell": "cd $dir && runghc $fileName"
+                },
+                "files.eol": "\n",
+                "[haskell]": {
+                    "editor.tabSize": 2
+                }
+            }
+        }
+    }
+}
